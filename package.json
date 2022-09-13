@@ -1,0 +1,14 @@
+{
+  "name": "typescript-lib-boilerplate",
+  "version": "0.0.0",
+  "description": "Boilerplate for typescript libraries",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": ""
+  },
+  "keywords": [],
+  "author": "Muhammad Rayhan Hamada Budiman <rayhanhamada1999@gmail.com>",
+  "license": "MIT"
+}

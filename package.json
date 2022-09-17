@@ -4,7 +4,7 @@
   "description": "Boilerplate for typescript libraries",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
-  "module": "dist/esm/index.js",
+  "module": "dist/index.mjs",
   "scripts": {
     "build": "vite build",
     "test": "vitest run --coverage"

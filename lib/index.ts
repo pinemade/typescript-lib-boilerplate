@@ -1,5 +1,5 @@
 export function helloWorld(name: string) {
-  console.log(name);
+	console.log(name);
 
-  return name;
+	return name;
 }

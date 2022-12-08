@@ -1,10 +1,24 @@
+import type { Options } from 'tsup';
 import { defineConfig } from 'tsup';
 
-export default defineConfig({
+const commonOptions: Options = {
 	entry: ['lib/index.ts'],
-	format: ['cjs', 'esm'],
-
-	splitting: false,
 	clean: true,
 	dts: true,
-});
+	splitting: false,
+};
+
+const buildOptions: Options[] = [
+	{
+		...commonOptions,
+		format: ['cjs'],
+		outDir: 'dist',
+	},
+	{
+		...commonOptions,
+		format: ['esm'],
+		outDir: 'dist/esm',
+	},
+];
+
+export default defineConfig(buildOptions);

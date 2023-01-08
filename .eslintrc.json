@@ -4,14 +4,23 @@
     "es2021": true,
     "node": true
   },
-  "extends": "xo",
   "overrides": [
     {
-      "extends": ["xo-typescript"],
-      "files": ["*.ts", "*.tsx"],
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "extends": [
+        "xo",
+        "xo-typescript"
+      ],
       "rules": {
         "object-curly-spacing": "off",
-        "@typescript-eslint/object-curly-spacing": "off"
+        "@typescript-eslint/object-curly-spacing": "off",
+        "@typescript-eslint/indent": [
+          "error",
+          4
+        ]
       }
     }
   ],

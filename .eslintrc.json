@@ -11,9 +11,14 @@
         "*.tsx"
       ],
       "extends": [
-        "xo",
-        "xo-typescript"
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
       ],
+      "plugins": [
+        "@typescript-eslint"
+      ],
+      "parser": "@typescript-eslint/parser",
       "rules": {
         "object-curly-spacing": "off",
         "@typescript-eslint/object-curly-spacing": "off",
